@@ -1,6 +1,6 @@
  
- /*
-===========VARIAVEIS===============
+ 
+/*===========VARIAVEIS===============*/
 
  let carro = "Ferrari";
  console.log(carro);
@@ -12,12 +12,13 @@
  console.log(cidade);
 
  console.log("O Carro é uma " + carro + "\nO Valor do bolo é " + preco + "\nE a cidade é " + cidade);
-===================FIM==================
+ console.log("=========================");
+/*===================FIM==================*/
 
 
 
 
-=============TEMPLATE STRING===============
+/*=============TEMPLATE STRING===============*/
 let x = 0;
 
 x = x + 1;
@@ -31,16 +32,59 @@ let sobrenome = "Andrade";
 let nomeCompleto = `${nome} ${sobrenome}`;
 
 console.log(nomeCompleto);
-======================FIM=====================
-*/
+console.log("=========================");
+/*======================FIM=====================*/
 
-let idade = 90;
+/*==================CONDICIONAIS IF ELSE===============*/
 
-if (idade>=18){
-  console.log("Você é maior de idade");
+let idade = 45;
 
+if (idade>=18 && idade<60){
+  console.log("Você é um ADULTO");
+  
+}else if(idade<18){
+  console.log("Você é uma CRIANÇA");
 }else{
-  console.log("Você é menor de Idade");
-
+    console.log("Você é um IDOSO")
 }
+
+console.log("=========================");
+/*=====================FIM==============================*/
+
+
+/*===========CONDICIONAL TERNÁRIO===================== */
+
+let isMember = false;
+
+let shipping = isMember ? 2: 10;
+
+console.log(isMember ? "Você é membro " :"Voce Não é membro");
+console.log("Frete: " + shipping); 
+console.log("=========================");
+/*======================FIM============================*/
+
+
+/*====================SWITCH CASE============= */
+
+    let profession = "fiscal";
+
+    switch(profession){
+        case 'fiscal':
+            console.log("Sua camisa será VERDE");
+            break;
+        case 'bombeiro':
+            console.log("Sua camisa será VERMELHA");
+            break;
+        case 'policial':
+            console.log("Sua camisa será AZUL");
+            break;
+        default:
+            console.log("Sua camisa será PRETA");
+            break
+
+
+    }
+
+
+/*========================FIM================== */
 
